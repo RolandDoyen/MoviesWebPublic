@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Create Movie</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/site.css" />
+    </head>
+
+    <body>
+        <header>
+            <div id="navbar"></div>
+        </header>
+
+        <main class="container mt-4">
+            <h2>Create a Movie</h2>
+            <form id="createForm">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" id="title" class="form-control" maxlength="200" required />
+                </div>
+                <div class="mb-3">
+                    <label for="sypnosis" class="form-label">Synopsis</label>
+                    <textarea id="sypnosis" class="form-control" maxlength="1000" rows="4" ></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="rating" class="form-label">Rating (0–10)</label>
+                    <input type="number" id="rating" class="form-control" step="0.1" min="0" max="10" />
+                </div>
+                <div class="mb-3">
+                    <label for="year" class="form-label">Release Year</label>
+                    <input type="number" id="year" class="form-control" min="1930" max="2030" required />
+                </div>
+                <div class="mb-3">
+                    <label for="length" class="form-label">Duration (minutes)</label>
+                    <input type="number" id="length" class="form-control" min="1" />
+                </div>
+                <div class="mb-3">
+                    <label for="trailer" class="form-label">Trailer Link (URL)</label>
+                    <input type="url" id="trailer" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label for="styles" class="form-label">Styles (comma-separated)</label>
+                    <input type="text" id="styles" class="form-control" placeholder="Action, Comedy, Drama..." />
+                </div>
+                <div class="mb-3">
+                    <label for="realisators" class="form-label">Realisators (comma-separated)</label>
+                    <input type="text" id="realisators" class="form-control" placeholder="John Doe, Jane Smith..." />
+                </div>
+                <div class="mb-3">
+                    <label for="scenarists" class="form-label">Scenarists (comma-separated)</label>
+                    <input type="text" id="scenarists" class="form-control" placeholder="John Doe, Jane Smith..." />
+                </div>
+                <div class="mb-3">
+                    <label for="actors" class="form-label">Actors (comma-separated)</label>
+                    <input type="text" id="actors" class="form-control" placeholder="Actor 1, Actor 2..." />
+                </div>
+                <div class="mb-3">
+                    <label for="producers" class="form-label">Producers (comma-separated)</label>
+                    <input type="text" id="producers" class="form-control" placeholder="Producer A, Producer B..." />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Create</button>
+                <a class="btn btn-danger" href="movies.html">Cancel</a>
+            </form>
+        </main>        
+            
+        <div id="message-success" class="alert alert-success d-none message-box"></div>
+        <div id="message-error" class="alert alert-danger d-none message-box"></div>
+
+        <footer class="mt-5">
+            <div id="footer"></div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/create.js" type="module"></script>
+    </body>
+</html>

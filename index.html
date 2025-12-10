@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+
+<body>
+    <header>
+        <div id="navbar"></div>
+    </header>
+
+    <main class="container mt-5">
+        <div class="text-center">
+            <div class="p-5 mb-4 bg-light rounded-3 shadow-sm">
+                <h1 class="display-5 fw-bold">Welcome to Movies App</h1>
+                <p class="fs-5">
+                    This application allows you to view, create, edit, and delete movies.<br>
+                    It is designed to demonstrate a complete API + frontend example.
+                </p>
+                <a href="movies.html" class="btn btn-primary btn-lg mt-3">View Movies</a>
+            </div>
+
+            <div class="p-4 mb-4 bg-light rounded-3 shadow-sm">
+                <h2 class="h4 fw-bold">Additional Information</h2>
+                <p class="fs-6">
+                    The API exposes a **Swagger** interface for testing endpoints and uses a **JWT token** for authentication.<br>
+                    You can access Swagger by clicking the link below:
+                </p>
+                <a href="https://moviesapi-rd.azurewebsites.net/swagger/index.html" target="_blank" class="btn btn-outline-secondary">
+                    Open Swagger
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-5 py-3 bg-light text-center border-top">
+        <div id="footer"></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>
